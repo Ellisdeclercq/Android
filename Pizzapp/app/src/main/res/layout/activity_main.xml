@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a97ba6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="274dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Android Pizza Shop"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="160dp"
+        android:layout_height="172dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginStart="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/food" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="204dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Choose Your Pizza Size:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="383dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="260dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/smallpizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small ($5)"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="250dp" />
+
+        <RadioButton
+            android:id="@+id/mediumpizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium ($7)"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="250dp" />
+
+        <RadioButton
+            android:id="@+id/largepizza"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Large ($9)"
+            tools:layout_editor_absoluteX="259dp"
+            tools:layout_editor_absoluteY="250dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/topings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Choose Your Toppings:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroup" />
+
+    <CheckBox
+        android:id="@+id/onions"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Onions ($1)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topings" />
+
+    <CheckBox
+        android:id="@+id/olives"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Olives ($2)"
+        app:layout_constraintBottom_toTopOf="@+id/tomatoes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onions" />
+
+    <CheckBox
+        android:id="@+id/tomatoes"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Tomatoes ($3)"
+        app:layout_constraintBottom_toTopOf="@+id/orderbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/olives" />
+
+    <Button
+        android:id="@+id/orderbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginStart="115dp"
+        android:text="PLACE YOUR ORDER"
+        android:onClick="onPlaceOrderButtonClicket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Totalprice"
+        android:layout_width="191dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginStart="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

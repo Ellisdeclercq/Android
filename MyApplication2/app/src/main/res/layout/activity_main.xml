@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android ATC Calculator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/txt_Number1"
+        android:layout_marginEnd="181dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/txt_Number1"
+        android:layout_toRightOf="@+id/txt_Number1"
+        android:hint="Enter The First Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="224dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="157dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter The Second Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number1" />
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/button_plus"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:text="*"
+        app:layout_constraintStart_toEndOf="@+id/button_minus"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <Button
+        android:id="@+id/button_divide"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@+id/button_multiply"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <TextView
+        android:id="@+id/result_view"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_minus" />
+
+
+</android.support.constraint.ConstraintLayout>

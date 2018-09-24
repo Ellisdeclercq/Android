@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="232dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/start_challenge"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/box_tranparent" />
+
+    <Button
+        android:id="@+id/saved_boxes"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:background="@android:color/holo_blue_light"
+        android:backgroundTint="?android:attr/colorEdgeEffect"
+        android:elevation="20dp"
+        android:text="My Saved Boxes"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_challenge" />
+
+    <Button
+        android:id="@+id/start_challenge"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:background="@android:color/holo_blue_light"
+        android:backgroundTint="?android:attr/colorEdgeEffect"
+        android:elevation="20dp"
+        android:text="Give me a Challenge!"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/saved_boxes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</android.support.constraint.ConstraintLayout>

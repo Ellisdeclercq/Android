@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text="We beginnen ons backpack-avontuur, zoals zo veel backpackers, in Bangkok, de hoofdstad van Thailand. Tijdens de 3 dagen dat we hier zijn maken we kennis met dé backpack straat van Azië, Khao San road, bezoeken we prachtige tempels en fietsen we met Co van Kessel door Chinatown. Verder acclimatiseren we lekker bij het zwembad op het dakterras van het Rambuttri village hotel. Op zoek naar een goed en goedkoop hotel in de buurt van Khao San road? Dan kan ik dit hotel van harte aanbevelen. Na deze keer zijn wij nog velen keren terug geweest."
+
+
+            />
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
