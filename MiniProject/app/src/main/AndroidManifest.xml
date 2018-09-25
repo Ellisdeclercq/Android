@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".About" />
         <activity android:name=".Settings" />
-        <activity android:name=".Popup"></activity>
+        <activity android:name=".Popup" />
+        <activity android:name=".Challenge"></activity>
     </application>
 
 </manifest>

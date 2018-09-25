@@ -44,6 +44,7 @@
         android:background="@android:color/holo_blue_light"
         android:backgroundTint="?android:attr/colorEdgeEffect"
         android:elevation="20dp"
+        android:onClick="goToChallenge"
         android:text="Give me a Challenge!"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:visibility="visible"

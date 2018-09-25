@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayelements">
+    <item>Banaan</item>
+    <item>Geitenkaas</item>
+    <item>Bruin brood</item>
+    <item>Komkommer</item>
+    <item>Ei</item>
+    <item>Suiker</item>
+    <item>Peper</item>
+    </string-array>
+</resources>
